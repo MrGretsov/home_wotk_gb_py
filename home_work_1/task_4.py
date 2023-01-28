@@ -3,12 +3,11 @@
 # если известно, что Петя и Сережа сделали одинаковое количество журавликов,
 # а Катя сделала в два раза больше журавликов, чем Петя и Сережа вместе?
 try:
-    import  math
     crane = int(input('Введите общее количество журавликов '))
     # formula : 2(x+x) + x + x = crane
     # 6 x = crane (допустим 18)
     # x = 3 (такое количество сделал Петя (Сережа)
-    Sergey = math.ceil(crane / 6)
+    Sergey = crane / 6
     Petya = Sergey
     Katya = (Petya + Sergey) * 2
     print('Катя сделала' , int(Katya) , '\nПетя сделал:' ,int(Petya) , '\nСергей сделал:' ,int(Sergey))
